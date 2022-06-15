@@ -1,5 +1,7 @@
 package main
 
+// https://leetcode.cn/problems/daily-temperatures/
+
 func dailyTemperatures(temperatures []int) []int {
 	stack := make([]int, 0)
 	res := make([]int, len(temperatures))
