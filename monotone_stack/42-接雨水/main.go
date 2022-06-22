@@ -1,11 +1,13 @@
 package main
 
+// https://leetcode.cn/problems/trapping-rain-water/
+
 import "fmt"
 
 func trap(height []int) int {
+	total := 0
 	left, right := 0, len(height)-1
 	leftMax, rightMax := 0, 0
-	total := 0
 	for left < right {
 		if height[left] < height[right] {
 			if height[left] >= leftMax {
